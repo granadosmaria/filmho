@@ -1,0 +1,285 @@
+/* Estilos generales del navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-left h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a i {
+    margin-left: 10px; /* Espaciado entre el ícono y el borde */
+}
+
+/* Menú Lateral (Sidebar) */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 50px; /* Ajustar para que no se solape con el navbar */
+    left: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    z-index: 50;
+    overflow-y: auto;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Menú lateral oculto */
+.sidebar.hidden {
+    width: 0;
+}
+
+/* Botón para mostrar/ocultar el menú */
+.toggle-menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 60;
+}
+
+/* Lista de enlaces del menú lateral */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links li {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.sidebar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* Submenú oculto */
+.submenu .submenu-links {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Mostrar submenú cuando el ítem está activo */
+.submenu.active .submenu-links {
+    display: block;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-left: 250px;
+    padding-top: 80px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+/* Estilo para el navbar con flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+}
+
+/* Separar el logo a la izquierda */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* El botón de cerrar sesión a la derecha */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-right i {
+    margin-left: 10px; /* Añadir margen al ícono */
+}
+
+/* Estilo para la lista del submenú */
+.submenu .submenu-links {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Mostrar submenú cuando la clase "active" está presente */
+.submenu.active .submenu-links {
+    display: block;
+}
+
+/* Cerrar sesión */
+#logout {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#logout i {
+    margin-right: 10px;
+}
+/* Estilo general para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los bordes dobles */
+    margin: 40px 0; /* Aumenta el margen superior e inferior */
+    font-family: Arial, sans-serif; /* Cambia la fuente de la tabla */
+    font-size: 16px; /* Aumenta el tamaño de la fuente de la tabla */
+}
+
+/* Estilo de las celdas (td y th) */
+th, td {
+    padding: 16px; /* Aumenta el espaciado dentro de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+    background-color: #333; /* Color de fondo para las celdas del encabezado */
+    color: white; /* Color de texto blanco para las celdas del encabezado */
+    font-size: 18px; /* Aumenta el tamaño de la fuente del encabezado */
+}
+
+/* Estilo para las filas alternas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Estilo cuando el ratón pasa sobre las filas */
+tr:hover {
+    background-color: #ddd; /* Color de fondo cuando el ratón pasa sobre una fila */
+}
+
+/* Bordes generales */
+table, th, td {
+    border: 1px solid #ddd; /* Agrega bordes alrededor de la tabla */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 36px; /* Agranda el tamaño del título */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #333; /* Cambia el color del texto del título */
+    margin-bottom: 20px; /* Agrega un espacio debajo del título */
+}
+
+/* Estilo para la tabla cuando está en una celda contenida en un contenedor */
+.table-container {
+    overflow-x: auto; /* Agrega barra de desplazamiento horizontal si es necesario */
+    max-width: 100%;
+}
+
+/* Estilo para la tabla cuando la pantalla es pequeña */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 12px; /* Menos espaciado en pantallas pequeñas */
+    }
+    h2 {
+        font-size: 28px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+}
+.btn-black {
+    background-color: black;    /* Fondo negro */
+    color: white;               /* Texto blanco */
+    border: none;               /* Sin borde */
+    padding: 10px 20px;         /* Espaciado */
+    cursor: pointer;           /* Cambiar el cursor a un puntero */
+    border-radius: 5px;         /* Bordes redondeados (opcional) */
+}
+
+.btn-black:hover {
+    background-color: #333;    /* Fondo gris oscuro cuando se pasa el mouse */
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a, .pagination .current-page {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .current-page {
+    font-weight: bold;
+    background-color: #ddd;
+}
